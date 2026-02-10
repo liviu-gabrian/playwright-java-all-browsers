@@ -1,1 +1,3 @@
-com\example\playwright\GoogleTest.class
+com/example/playwright/GoogleTest.class
+com/example/playwright/utils/AllureReportUtil.class
+com/example/playwright/GoogleDemoTests.class

@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"b2dc7bc9559294fb765ae5f776f591f6","name":"com.example.playwright.GoogleDemoTests","statistic":{"failed":5,"broken":2,"skipped":0,"passed":3,"unknown":0,"total":10}},{"uid":"358afe6cad05d4382f1606590838a6bb","name":"com.example.playwright.GoogleTest","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

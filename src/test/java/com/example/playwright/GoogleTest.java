@@ -3,14 +3,20 @@ package com.example.playwright;
 import com.microsoft.playwright.*;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.RegisterExtension;
 import com.example.playwright.utils.AllureReportUtil;
+import com.example.playwright.utils.AllurePlaywrightTestWatcher;
 
 @Epic("Demo Playwright Project")
 @Feature("Google Homepage")
 public class GoogleTest {
     static Playwright playwright;
     static Browser browser;
+    static BrowserContext context;
     Page page;
+
+    @RegisterExtension
+    AllurePlaywrightTestWatcher allureWatcher = new AllurePlaywrightTestWatcher(() -> page);
 
     @BeforeAll
     static void setUp() {
@@ -20,7 +26,10 @@ public class GoogleTest {
 
     @BeforeEach
     void createPage() {
-        page = browser.newPage();
+        context = browser.newContext(new Browser.NewContextOptions()
+                .setRecordVideoDir(java.nio.file.Paths.get("videos"))
+        );
+        page = context.newPage();
     }
 
     @Test
@@ -35,11 +44,12 @@ public class GoogleTest {
     }
 
     @AfterEach
-    void tearDown(TestInfo testInfo) {
-        byte[] screenshot = page.screenshot();
-        Allure.addAttachment("Screenshot: " + testInfo.getDisplayName(), "image/png",
-                new java.io.ByteArrayInputStream(screenshot), ".png");
-        page.close();
+    void tearDown() {
+        if (context != null) {
+            context.close();
+        } else if (page != null) {
+            page.close();
+        }
     }
 
     @AfterAll

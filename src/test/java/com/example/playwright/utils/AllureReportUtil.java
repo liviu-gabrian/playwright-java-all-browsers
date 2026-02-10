@@ -5,7 +5,8 @@ import java.io.IOException;
 
 public class AllureReportUtil {
 
-    private static final String RESULTS_DIR = "target/allure-results";
+    // Allure JUnit5 writes results by default into "allure-results" at project root
+    private static final String RESULTS_DIR = "allure-results";
     private static final String REPORT_DIR = "target/allure-report";
 
     public static void generateAndOpenReport() {
