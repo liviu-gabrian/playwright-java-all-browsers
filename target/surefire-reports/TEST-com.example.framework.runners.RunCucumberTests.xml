@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.framework.runners.RunCucumberTests" time="13.32" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-booter/3.2.5/surefire-booter-3.2.5.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-api/3.2.5/surefire-api-3.2.5.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.2.5/surefire-logger-api-3.2.5.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.2.5/surefire-shared-utils-3.2.5.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.2.5/surefire-extensions-spi-3.2.5.jar:/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers/target/test-classes:/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers/target/classes:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/playwright/1.48.0/playwright-1.48.0.jar:/Users/liviugabrian/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/liviugabrian/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/liviugabrian/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/driver/1.48.0/driver-1.48.0.jar:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/driver-bundle/1.48.0/driver-bundle-1.48.0.jar:/Users/liviugabrian/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/liviugabrian/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite/1.11.0/junit-platform-suite-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-api/1.11.0/junit-platform-suite-api-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.11.0/junit-platform-suite-engine-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.11.0/junit-platform-suite-commons-1.11.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/liviugabrian/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-picocontainer/7.15.0/cucumber-picocontainer-7.15.0.jar:/Users/liviugabrian/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/liviugabrian/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/liviugabrian/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/liviugabrian/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/liviugabrian/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/liviugabrian/.m2/repository/org/slf4j/slf4j-simple/2.0.16/slf4j-simple-2.0.16.jar:/Users/liviugabrian/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/3.2.5/surefire-junit-platform-3.2.5.jar:/Users/liviugabrian/.m2/repository/org/apache/maven/surefire/common-java5/3.2.5/common-java5-3.2.5.jar"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RO"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers/target/surefire 2026-02-17T22-02-04_449-jvmRun1 surefire-20260217220204492_1tmp surefire_0-20260217220204492_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers/target/test-classes:/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers/target/classes:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/playwright/1.48.0/playwright-1.48.0.jar:/Users/liviugabrian/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/liviugabrian/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/liviugabrian/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/driver/1.48.0/driver-1.48.0.jar:/Users/liviugabrian/.m2/repository/com/microsoft/playwright/driver-bundle/1.48.0/driver-bundle-1.48.0.jar:/Users/liviugabrian/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/liviugabrian/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite/1.11.0/junit-platform-suite-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-api/1.11.0/junit-platform-suite-api-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.11.0/junit-platform-suite-engine-1.11.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.11.0/junit-platform-suite-commons-1.11.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar:/Users/liviugabrian/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/liviugabrian/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/liviugabrian/.m2/repository/io/cucumber/cucumber-picocontainer/7.15.0/cucumber-picocontainer-7.15.0.jar:/Users/liviugabrian/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/liviugabrian/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/liviugabrian/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/liviugabrian/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/liviugabrian/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/liviugabrian/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/liviugabrian/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/liviugabrian/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/liviugabrian/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/liviugabrian/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/liviugabrian/.m2/repository/org/slf4j/slf4j-simple/2.0.16/slf4j-simple-2.0.16.jar:/Users/liviugabrian/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/liviugabrian"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.2"/>
+    <property name="user.name" value="liviugabrian"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="skipTests" value="false"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/liviugabrian/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/px/5wpc216d04jbn0bfr5wdf0vh0000gn/T/"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/Users/liviugabrian/project/PlaywrightWithJava/playwright-java-all-browsers"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value="test"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/liviugabrian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Create a new user" classname="User Management API" time="1.017">
+    <system-out><![CDATA[
+@api
+Scenario: Create a new user                         &amp#27;[90m# features/api/user_management.feature:8&amp#27;[0m
+Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newuser",
+    "email": "newuser@example.com",
+    "name": "New User"
+}
+HTTP/1.1 201 Created
+Date: Tue, 17 Feb 2026 20:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+Connection: keep-alive
+access-control-allow-credentials: true
+access-control-expose-headers: Location
+Cache-Control: no-cache
+etag: W/"5f-wIrohFVfy34WROlWQ0VvxBn5/Ok"
+expires: -1
+location: https://jsonplaceholder.typicode.com/users/11
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=u7cUFKWkF1mTJrkGyEMglNzfd4bhmy1Bo2PeN3%2FYopM%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1771358530"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=u7cUFKWkF1mTJrkGyEMglNzfd4bhmy1Bo2PeN3%2FYopM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1771358530"
+Server: cloudflare
+vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-powered-by: Express
+x-ratelimit-limit: 1000
+x-ratelimit-remaining: 999
+x-ratelimit-reset: 1771358571
+cf-cache-status: DYNAMIC
+CF-RAY: 9cf7e17d3961e40b-OTP
+alt-svc: h3=":443"; ma=86400
+
+{
+    "username": "newuser",
+    "email": "newuser@example.com",
+    "name": "New User",
+    "id": 11
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a POST request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m with body:&amp#27;[0m &amp#27;[90m# com.example.framework.steps.api.ApiSteps.iSendAPostRequestWithBody(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m            &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseStatusShouldBe(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain field &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m        &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseShouldContainField(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Get user by ID" classname="User Management API" time="0.092">
+    <system-out><![CDATA[
+@api
+Scenario: Get user by ID                           &amp#27;[90m# features/api/user_management.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user exists with ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m                  &amp#27;[90m# com.example.framework.steps.api.ApiSteps.aUserExistsWithId(java.lang.String)&amp#27;[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 17 Feb 2026 20:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-credentials: true
+Cache-Control: max-age=43200
+etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+expires: -1
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=r5i8%2Bxts9f4WIA2Vf7L0vtKtyrP2tQInI%2F31przIIoM%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1771350784"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=r5i8%2Bxts9f4WIA2Vf7L0vtKtyrP2tQInI%2F31przIIoM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1771350784"
+Server: cloudflare
+vary: Origin, Accept-Encoding
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-powered-by: Express
+x-ratelimit-limit: 1000
+x-ratelimit-remaining: 959
+x-ratelimit-reset: 1771350812
+Age: 7746
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: 9cf7e17fa8a2c9d4-OTP
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+    }
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users/1"&amp#27;[0m          &amp#27;[90m# com.example.framework.steps.api.ApiSteps.iSendAGetRequest(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m           &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseStatusShouldBe(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain field &amp#27;[0m&amp#27;[32m&amp#27;[1m"username"&amp#27;[0m &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseShouldContainField(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify user details via API and perform UI login" classname="API + UI user verification" time="3.227">
+    <system-out><![CDATA[
+@api @ui @e2e
+Scenario: Verify user details via API and perform UI login         &amp#27;[90m# features/e2e/api_ui_user_login.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user exists with ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m                                  &amp#27;[90m# com.example.framework.steps.api.ApiSteps.aUserExistsWithId(java.lang.String)&amp#27;[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 17 Feb 2026 20:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-credentials: true
+Cache-Control: max-age=43200
+etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+expires: -1
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=r5i8%2Bxts9f4WIA2Vf7L0vtKtyrP2tQInI%2F31przIIoM%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1771350784"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=r5i8%2Bxts9f4WIA2Vf7L0vtKtyrP2tQInI%2F31przIIoM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1771350784"
+Server: cloudflare
+vary: Origin, Accept-Encoding
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-powered-by: Express
+x-ratelimit-limit: 1000
+x-ratelimit-remaining: 959
+x-ratelimit-reset: 1771350812
+Age: 7746
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: 9cf7e1826d760545-OTP
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+    }
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users/1"&amp#27;[0m                          &amp#27;[90m# com.example.framework.steps.api.ApiSteps.iSendAGetRequest(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                           &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseStatusShouldBe(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain field &amp#27;[0m&amp#27;[32m&amp#27;[1m"username"&amp#27;[0m                 &amp#27;[90m# com.example.framework.steps.api.ApiSteps.theResponseShouldContainField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                     &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iAmOnTheLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI log in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"tomsmith"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"SuperSecretPassword!"&amp#27;[0m &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iLogInAsWithPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the dashboard&amp#27;[0m                                  &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iShouldSeeTheDashboard()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Complete checkout as logged-in user" classname="End-to-end checkout flow" time="3.423">
+    <system-out><![CDATA[
+@ui @e2e
+Scenario: Complete checkout as logged-in user            &amp#27;[90m# features/ui/e2e_checkout.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                           &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iAmOnTheLoginPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI log in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"customer"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"customer123"&amp#27;[0m &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iLogInAsWithPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI navigate to the checkout&amp#27;[0m                        &amp#27;[90m# com.example.framework.steps.ui.CheckoutSteps.iNavigateToTheCheckout()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI complete the checkout with my saved address&amp#27;[0m      &amp#27;[90m# com.example.framework.steps.ui.CheckoutSteps.iCompleteTheCheckoutWithMySavedAddress()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see an order confirmation&amp#27;[0m                &amp#27;[90m# com.example.framework.steps.ui.CheckoutSteps.iShouldSeeAnOrderConfirmation()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Successful login with valid credentials" classname="User Login" time="2.767">
+    <system-out><![CDATA[
+@ui
+Scenario: Successful login with valid credentials                  &amp#27;[90m# features/ui/login.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                     &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iAmOnTheLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI log in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"tomsmith"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"SuperSecretPassword!"&amp#27;[0m &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iLogInAsWithPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the dashboard&amp#27;[0m                                  &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iShouldSeeTheDashboard()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Failed login with invalid credentials" classname="User Login" time="2.751">
+    <system-out><![CDATA[
+@ui
+Scenario: Failed login with invalid credentials            &amp#27;[90m# features/ui/login.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                             &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iAmOnTheLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI log in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"invaliduser"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"wrongpass"&amp#27;[0m &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iLogInAsWithPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see an error message&amp#27;[0m                       &amp#27;[90m# com.example.framework.steps.ui.LoginSteps.iShouldSeeAnErrorMessage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

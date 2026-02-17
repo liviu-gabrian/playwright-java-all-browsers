@@ -1,12 +1,32 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"This test is designed to fail: expects results URL to contain 'this-will-never-exist'","30982","searchForPlaywright_shouldFailOnWeirdUrlCheck()","","2026-02-10","broken","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","searchForPlaywright_shouldFailOnWeirdUrlCheck"
-"Should open google.com and verify the title contains 'Google'","1223","googleHomePageTitle_shouldContainGoogle()","","2026-02-10","passed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleHomePageTitle_shouldContainGoogle"
-"Simple assertion that is always false","38","alwaysFalseCondition_shouldFail()","","2026-02-10","failed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","alwaysFalseCondition_shouldFail"
-"Demonstrates negative assertion that still passes","1250","googleTitle_shouldNotBeJustGoogle()","","2026-02-10","failed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleTitle_shouldNotBeJustGoogle"
-"Pure JUnit assertion that should always pass","38","simpleMath_shouldPass()","","2026-02-10","passed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","simpleMath_shouldPass"
-"Open google.com and verify that the URL starts with https","1363","googleHomePageUrl_shouldUseHttps()","","2026-02-10","passed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleHomePageUrl_shouldUseHttps"
-"Search for 'Playwright' and verify that the results page URL contains 'search'","31126","searchForPlaywright_shouldOpenResultsPage()","","2026-02-10","broken","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","searchForPlaywright_shouldOpenResultsPage"
-"This test is designed to fail: incorrect math expectation","50","simpleMath_shouldFail()","","2026-02-10","failed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","simpleMath_shouldFail"
-"This test is designed to fail: expects title to contain 'Bing'","828","googleTitle_shouldContainBing_butFails()","","2026-02-10","failed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleTitle_shouldContainBing_butFails"
-"Navigate to google.com and verify that the page title contains 'Google'","2239","testGoogleHomePage()","","2026-02-10","passed","2026-02-10","","com.example.playwright.GoogleTest","com.example.playwright.GoogleTest","testGoogleHomePage"
-"String equality check that is designed to fail","35","stringEquality_shouldFail()","","2026-02-10","failed","2026-02-10","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","stringEquality_shouldFail"
+"This test is designed to fail: incorrect math expectation","45","simpleMath_shouldFail()","","2026-02-17","failed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","simpleMath_shouldFail"
+"Navigate to google.com and verify that the page title contains 'Google'","1356","testGoogleHomePage()","","2026-02-17","passed","2026-02-17","","com.example.playwright.GoogleTest","com.example.playwright.GoogleTest","testGoogleHomePage"
+"  As a user
+  I want to log in to the application
+  So that I can access my account","2251","Successful login with valid credentials","","2026-02-17","passed","2026-02-17","","User Login","Successful login with valid credentials",""
+"This test is designed to fail: expects results URL to contain 'this-will-never-exist'","31261","searchForPlaywright_shouldFailOnWeirdUrlCheck()","","2026-02-17","broken","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","searchForPlaywright_shouldFailOnWeirdUrlCheck"
+"Should open google.com and verify the title contains 'Google'","1653","googleHomePageTitle_shouldContainGoogle()","","2026-02-17","passed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleHomePageTitle_shouldContainGoogle"
+"Open google.com and verify that the URL starts with https","1764","googleHomePageUrl_shouldUseHttps()","","2026-02-17","passed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleHomePageUrl_shouldUseHttps"
+"This test is designed to fail: expects title to contain 'Bing'","1486","googleTitle_shouldContainBing_butFails()","","2026-02-17","failed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleTitle_shouldContainBing_butFails"
+"  As a customer
+  I want to complete a checkout
+  So that I can purchase items","2388","Complete checkout as logged-in user","","2026-02-17","passed","2026-02-17","","End-to-end checkout flow","Complete checkout as logged-in user",""
+"  As an API consumer
+  I want to manage users via HTTP endpoints
+  So that I can create and retrieve user data","1191","Create a new user","","2026-02-17","passed","2026-02-17","","User Management API","Create a new user",""
+"  As an API consumer
+  I want to manage users via HTTP endpoints
+  So that I can create and retrieve user data","86","Get user by ID","","2026-02-17","passed","2026-02-17","","User Management API","Get user by ID",""
+"","0","GoogleTest","","2026-02-17","broken","2026-02-17","","com.example.playwright.GoogleTest","com.example.playwright.GoogleTest",""
+"Search for 'Playwright' and verify that the results page URL contains 'search'","31871","searchForPlaywright_shouldOpenResultsPage()","","2026-02-17","broken","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","searchForPlaywright_shouldOpenResultsPage"
+"  As a QA engineer
+  I want to verify a user via API and UI
+  So that I can validate both layers in a single E2E flow","2651","Verify user details via API and perform UI login","","2026-02-17","passed","2026-02-17","","API + UI user verification","Verify user details via API and perform UI login",""
+"Pure JUnit assertion that should always pass","40","simpleMath_shouldPass()","","2026-02-17","passed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","simpleMath_shouldPass"
+"String equality check that is designed to fail","42","stringEquality_shouldFail()","","2026-02-17","failed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","stringEquality_shouldFail"
+"Simple assertion that is always false","42","alwaysFalseCondition_shouldFail()","","2026-02-17","failed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","alwaysFalseCondition_shouldFail"
+"Demonstrates negative assertion that still passes","1317","googleTitle_shouldNotBeJustGoogle()","","2026-02-17","failed","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests","googleTitle_shouldNotBeJustGoogle"
+"","0","GoogleDemoTests","","2026-02-17","broken","2026-02-17","","com.example.playwright.GoogleDemoTests","com.example.playwright.GoogleDemoTests",""
+"  As a user
+  I want to log in to the application
+  So that I can access my account","2244","Failed login with invalid credentials","","2026-02-17","passed","2026-02-17","","User Login","Failed login with invalid credentials",""

@@ -1,0 +1,2 @@
+GET /users/1
+Status: 200

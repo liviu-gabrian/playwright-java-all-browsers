@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.playwright.GoogleTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.54 s -- in com.example.playwright.GoogleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.505 s -- in com.example.playwright.GoogleTest

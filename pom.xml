@@ -12,8 +12,16 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Testing libraries -->
         <junit.version>5.11.0</junit.version>
         <playwright.version>1.48.0</playwright.version>
+        <cucumber.version>7.15.0</cucumber.version>
+        <restassured.version>5.5.0</restassured.version>
+        <allure.cucumber.version>2.29.0</allure.cucumber.version>
+
+        <!-- Default test environment (can be overridden by Maven profile) -->
+        <env>test</env>
     </properties>
 
     <dependencies>
@@ -37,12 +45,71 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- JUnit Platform Suite (for Cucumber runner) -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>1.11.0</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Allure Reporter for JUnit 5 -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
             <version>2.29.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber BDD -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Optional but useful for DI in step definitions -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- RestAssured for HTTP/API testing -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restassured.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Jackson for JSON (used by RestAssured) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Allure adapter for Cucumber 7 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>${allure.cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Simple logging backend (optional) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.16</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -55,6 +122,14 @@
                 <version>3.2.5</version>
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
+                    <!-- Expose the active environment as a JVM system property (used by ConfigManager) -->
+                    <systemPropertyVariables>
+                        <env>${env}</env>
+                    </systemPropertyVariables>
+                    <!-- Exclude legacy demo tests with intentional failures; run with -Pdemo to include them -->
+                    <excludes>
+                        <exclude>**/GoogleDemoTests.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <!-- Plugin Allure pentru Maven -->
@@ -68,4 +143,37 @@
             </plugin>
         </plugins>
     </build>
+
+  <!-- Maven profiles for test / uat environments and demo runs -->
+  <profiles>
+    <profile>
+      <id>test</id>
+      <properties>
+        <env>test</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>uat</id>
+      <properties>
+        <env>uat</env>
+      </properties>
+    </profile>
+    <!-- Demo profile: include legacy GoogleDemoTests to showcase Allure
+         results with a mix of passing and intentionally failing tests. -->
+    <profile>
+      <id>demo</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <!-- Override default excludes so GoogleDemoTests is executed. -->
+              <excludes/>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

@@ -1,0 +1,6 @@
+{
+    "username": "newuser",
+    "email": "newuser@example.com",
+    "name": "New User",
+    "id": 11
+}
